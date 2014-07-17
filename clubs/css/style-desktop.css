@@ -1,0 +1,1227 @@
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	html
+	{
+		width: 100%;
+		height: 100%;
+	}
+
+	body
+	{
+		width: 100%;
+		min-height: 100%;
+		overflow-y: scroll;
+		min-width: 1000px;
+	}
+
+	body, input, textarea
+	{
+		font-size: 14pt;
+		line-height: 1.75em;
+	}
+	
+	h1
+	{
+		font-size: 2.4em;
+		letter-spacing: -0.015em;
+	}
+
+	h2
+	{
+		font-size: 1.8em;
+		letter-spacing: -0.015em;
+	}
+	
+	h3, h4, h5, h6
+	{
+		font-size: 1.25em;
+		letter-spacing: -0.015em;
+	}
+	
+	header
+	{
+		margin: 0 0 1.5em 0;
+	}
+
+	ul.links
+	{
+	}
+	
+		ul.links li
+		{
+		}
+
+			ul.links li:before
+			{
+				padding: 0 0.75em 0 0.75em;
+			}
+
+	.button
+	{
+		padding: 0.7em 1.5em 0.7em 1.5em;
+	}
+
+		.button-small
+		{
+			font-size: 0.75em;
+		}
+		
+		.button-big
+		{
+			font-size: 1.25em;
+			padding: 0.5em 1.25em 0.5em 1.25em;
+		}
+		
+		.button-huge
+		{
+			font-size: 1.5em;
+			padding: 0.5em 1.25em 0.5em 1.25em;
+		}
+
+	.byline
+	{
+		margin: 0.5em 0 0 0;
+	}
+	.byline2
+	{
+		margin: 0.5em 0 0 0;
+	}
+	.is-gallery
+	{
+	}
+	
+		.is-gallery .image
+		{
+			margin: 0;
+		}
+		
+/*********************************************************************************/
+/* Wrapper                                                                       */
+/*********************************************************************************/
+			
+	#wrapper
+	{
+		width: 45em;
+		margin: 0 auto;
+		opacity: 0.00001;
+	}
+
+		#wrapper.tall
+		{
+			padding-bottom: 6em;
+		}
+	
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+	
+	#nav
+	{
+		text-align: center;
+		height: 4.25em;
+		cursor: default;
+	}
+	
+		#nav a
+		{
+			font-size: 2.5em;
+			margin: 0 0.25em 0 0.25em;
+			opacity: 0.35;
+			outline: 0;
+		}
+
+			#nav a:before
+			{
+				font-size: 0.8em;
+			}
+
+			#nav a:after
+			{
+				content: '';
+				display: block;
+				position: absolute;
+				left: 50%;
+				bottom: -0.75em;
+				margin-left: -0.5em;
+				border-bottom: solid 0em #fff;
+				border-left: solid 0.5em transparent;
+				border-right: solid 0.5em transparent;
+				-moz-transition: border-bottom-width .25s ease-in-out;
+				-webkit-transition: border-bottom-width .25s ease-in-out;
+				-o-transition: border-bottom-width .25s ease-in-out;
+				-ms-transition: border-bottom-width .25s ease-in-out;
+				transition: border-bottom-width .25s ease-in-out;
+			}
+		
+			#nav a span
+			{
+				display: block;
+				position: absolute;
+				background: #222222;
+				color: #fff;
+				top: -2.75em;
+				font-size: 0.3em;
+				height: 2.25em;
+				line-height: 2.25em;
+				left: 50%;
+				opacity: 0;
+				
+				/* Labels not wide enough? Increase its width below and set margin-left to ((width / 2) * -1) */
+				width: 5.5em;
+				margin-left: -2.75em;
+			}
+			
+				#nav a span:after
+				{
+					content: '';
+					display: block;
+					position: absolute;
+					bottom: -0.4em;
+					left: 50%;
+					margin-left: -0.6em;
+					border-top: solid 0.6em #222222;
+					border-left: solid 0.6em transparent;
+					border-right: solid 0.6em transparent;
+				}
+
+			#nav a:hover
+			{
+				opacity: 1.0;
+			}
+
+				#nav a:hover span
+				{
+					opacity: 1.0;
+				}	
+			
+			#nav a.active
+			{
+				opacity: 1.0;
+			}
+
+				#nav a.active:after
+				{
+					border-bottom-width: 0.5em;
+				}
+			
+/*********************************************************************************/
+/* Panels                                                                        */
+/*********************************************************************************/
+
+	#main
+	{
+		width: 45em;
+		background: #fff;
+		box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.25);
+	}
+
+	.panel
+	{
+		padding: 3.5em 2.5em 3.5em 2.5em;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 45em;
+	}
+	
+	/* Me */
+	
+		#ananya
+		{
+			padding: 0;
+			height: 20em;
+		}
+		
+			#ananya .pic
+			{
+				display: block;
+				position: absolute;
+				right: -1px;
+				top: 0;
+				height: 100%;
+				text-decoration: none;
+			}
+			
+				#ananya .pic img
+				{
+					position: relative;
+					display: block;
+					height: 100%;
+				}
+			
+				#ananya .pic .arrow
+				{
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -1.375em;
+					width: 2.75em;
+					height: 2.75em;
+					background: #000;
+					background: rgba(0,0,0,0.75);
+					color: #fff;
+					text-align: center;
+					line-height: 2.75em;
+					font-size: 1.5em;
+					z-index: 1;
+					-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-o-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+				}
+
+					#ananya .pic .arrow:before
+					{
+						position: relative;
+						padding-right: 0;
+						top: 0.125em;
+					}
+			
+					#ananya .pic .arrow span
+					{
+						display: block;
+						text-indent: -9999px;
+					}
+				
+					#ananya .pic:hover .arrow
+					{
+						width: 3em;
+						padding-right: 0.25em;
+					}
+		#vividha
+		{
+			padding: 0;
+			height: 20em;
+		}
+		
+			#vividha .pic
+			{
+				display: block;
+				position: absolute;
+				right: -1px;
+				top: 0;
+				height: 100%;
+				text-decoration: none;
+			}
+			
+				#vividha .pic img
+				{
+					position: relative;
+					display: block;
+					height: 100%;
+				}
+			
+				#vividha .pic .arrow
+				{
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -1.375em;
+					width: 2.75em;
+					height: 2.75em;
+					background: #000;
+					background: rgba(0,0,0,0.75);
+					color: #fff;
+					text-align: center;
+					line-height: 2.75em;
+					font-size: 1.5em;
+					z-index: 1;
+					-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-o-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+				}
+
+					#vividha .pic .arrow:before
+					{
+						position: relative;
+						padding-right: 0;
+						top: 0.125em;
+					}
+			
+					#vividha .pic .arrow span
+					{
+						display: block;
+						text-indent: -9999px;
+					}
+				
+					#vividha .pic:hover .arrow
+					{
+						width: 3em;
+						padding-right: 0.25em;
+					}
+		#tarannum
+		{
+			padding: 0;
+			height: 20em;
+		}
+		
+			#tarannum .pic
+			{
+				display: block;
+				position: absolute;
+				right: -1px;
+				top: 0;
+				height: 100%;
+				text-decoration: none;
+			}
+			
+				#tarannum .pic img
+				{
+					position: relative;
+					display: block;
+					height: 100%;
+				}
+			
+				#tarannum .pic .arrow
+				{
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -1.375em;
+					width: 2.75em;
+					height: 2.75em;
+					background: #000;
+					background: rgba(0,0,0,0.75);
+					color: #fff;
+					text-align: center;
+					line-height: 2.75em;
+					font-size: 1.5em;
+					z-index: 1;
+					-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-o-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+				}
+
+					#tarannum .pic .arrow:before
+					{
+						position: relative;
+						padding-right: 0;
+						top: 0.125em;
+					}
+			
+					#tarannum .pic .arrow span
+					{
+						display: block;
+						text-indent: -9999px;
+					}
+				
+					#tarannum .pic:hover .arrow
+					{
+						width: 3em;
+						padding-right: 0.25em;
+					}
+		#srijan
+		{
+			padding: 0;
+			height: 20em;
+		}
+		
+			#srijan .pic
+			{
+				display: block;
+				position: absolute;
+				right: -1px;
+				top: 0;
+				height: 100%;
+				text-decoration: none;
+			}
+			
+				#srijan .pic img
+				{
+					position: relative;
+					display: block;
+					height: 100%;
+				}
+			
+				#srijan .pic .arrow
+				{
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -1.375em;
+					width: 2.75em;
+					height: 2.75em;
+					background: #000;
+					background: rgba(0,0,0,0.75);
+					color: #fff;
+					text-align: center;
+					line-height: 2.75em;
+					font-size: 1.5em;
+					z-index: 1;
+					-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-o-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+				}
+
+					#srijan .pic .arrow:before
+					{
+						position: relative;
+						padding-right: 0;
+						top: 0.125em;
+					}
+			
+					#srijan .pic .arrow span
+					{
+						display: block;
+						text-indent: -9999px;
+					}
+				
+					#srijan .pic:hover .arrow
+					{
+						width: 3em;
+						padding-right: 0.25em;
+					}
+		#natraj
+		{
+			padding: 0;
+			height: 20em;
+		}
+		
+			#natraj .pic
+			{
+				display: block;
+				position: absolute;
+				right: -1px;
+				top: 0;
+				height: 100%;
+				text-decoration: none;
+			}
+			
+				#natraj .pic img
+				{
+					position: relative;
+					display: block;
+					height: 100%;
+				}
+			
+				#natraj .pic .arrow
+				{
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -1.375em;
+					width: 2.75em;
+					height: 2.75em;
+					background: #000;
+					background: rgba(0,0,0,0.75);
+					color: #fff;
+					text-align: center;
+					line-height: 2.75em;
+					font-size: 1.5em;
+					z-index: 1;
+					-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-o-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+				}
+
+					#natraj .pic .arrow:before
+					{
+						position: relative;
+						padding-right: 0;
+						top: 0.125em;
+					}
+			
+					 #natraj .pic .arrow span
+					{
+						display: block;
+						text-indent: -9999px;
+					}
+				
+					#natraj .pic:hover .arrow
+					{
+						width: 3em;
+						padding-right: 0.25em;
+					}
+		#jhalak
+		{
+			padding: 0;
+			height: 20em;
+		}
+		
+			#jhalak .pic
+			{
+				display: block;
+				position: absolute;
+				right: -1px;
+				top: 0;
+				height: 100%;
+				text-decoration: none;
+			}
+			
+				#jhalak .pic img
+				{
+					position: relative;
+					display: block;
+					height: 100%;
+				}
+			
+				#jhalak .pic .arrow
+				{
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -1.375em;
+					width: 2.75em;
+					height: 2.75em;
+					background: #000;
+					background: rgba(0,0,0,0.75);
+					color: #fff;
+					text-align: center;
+					line-height: 2.75em;
+					font-size: 1.5em;
+					z-index: 1;
+					-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-o-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+				}
+
+					#jhalak .pic .arrow:before
+					{
+						position: relative;
+						padding-right: 0;
+						top: 0.125em;
+					}
+			
+					#jhalak .pic .arrow span
+					{
+						display: block;
+						text-indent: -9999px;
+					}
+				
+					#jhalak .pic:hover .arrow
+					{
+						width: 3em;
+						padding-right: 0.25em;
+					}
+			
+		#manan
+		{
+			padding: 0;
+			height: 20em;
+		}
+		
+			#manan .pic
+			{
+				display: block;
+				position: absolute;
+				right: -1px;
+				top: 0;
+				height: 100%;
+				text-decoration: none;
+			}
+			
+				#manan .pic img
+				{
+					position: relative;
+					display: block;
+					height: 100%;
+				}
+			
+				#manan .pic .arrow
+				{
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -1.375em;
+					width: 2.75em;
+					height: 2.75em;
+					background: #000;
+					background: rgba(0,0,0,0.75);
+					color: #fff;
+					text-align: center;
+					line-height: 2.75em;
+					font-size: 1.5em;
+					z-index: 1;
+					-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-o-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+				}
+
+					#manan .pic .arrow:before
+					{
+						position: relative;
+						padding-right: 0;
+						top: 0.125em;
+					}
+			
+					#manan .pic .arrow span
+					{
+						display: block;
+						text-indent: -9999px;
+					}
+				
+					#manan .pic:hover .arrow
+					{
+						width: 3em;
+						padding-right: 0.25em;
+					}
+		#mechnext
+		{
+			padding: 0;
+			height: 20em;
+		}
+		
+			#mechnext .pic
+			{
+				display: block;
+				position: absolute;
+				right: -1px;
+				top: 0;
+				height: 100%;
+				text-decoration: none;
+			}
+			
+				#mechnext .pic img
+				{
+					position: relative;
+					display: block;
+					height: 100%;
+				}
+			
+				#mechnext .pic .arrow
+				{
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -1.375em;
+					width: 2.75em;
+					height: 2.75em;
+					background: #000;
+					background: rgba(0,0,0,0.75);
+					color: #fff;
+					text-align: center;
+					line-height: 2.75em;
+					font-size: 1.5em;
+					z-index: 1;
+					-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-o-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+				}
+
+					#mechnext .pic .arrow:before
+					{
+						position: relative;
+						padding-right: 0;
+						top: 0.125em;
+					}
+			
+					#mechnext .pic .arrow span
+					{
+						display: block;
+						text-indent: -9999px;
+					}
+				
+					#mechnext .pic:hover .arrow
+					{
+						width: 3em;
+						padding-right: 0.25em;
+					}
+		#microbird
+		{
+			padding: 0;
+			height: 20em;
+		}
+		
+			#microbird .pic
+			{
+				display: block;
+				position: absolute;
+				right: -1px;
+				top: 0;
+				height: 100%;
+				text-decoration: none;
+			}
+			
+				#microbird .pic img
+				{
+					position: relative;
+					display: block;
+					height: 100%;
+				}
+			
+				#microbird .pic .arrow
+				{
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -1.375em;
+					width: 2.75em;
+					height: 2.75em;
+					background: #000;
+					background: rgba(0,0,0,0.75);
+					color: #fff;
+					text-align: center;
+					line-height: 2.75em;
+					font-size: 1.5em;
+					z-index: 1;
+					-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-o-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+				}
+
+					#microbird .pic .arrow:before
+					{
+						position: relative;
+						padding-right: 0;
+						top: 0.125em;
+					}
+			
+					#microbird .pic .arrow span
+					{
+						display: block;
+						text-indent: -9999px;
+					}
+				
+					#microbird .pic:hover .arrow
+					{
+						width: 3em;
+						padding-right: 0.25em;
+					}
+		#samarpan
+		{
+			padding: 0;
+			height: 20em;
+		}
+		
+			#samarpan .pic
+			{
+				display: block;
+				position: absolute;
+				right: -1px;
+				top: 0;
+				height: 100%;
+				text-decoration: none;
+			}
+			
+				#samarpan .pic img
+				{
+					position: relative;
+					display: block;
+					height: 100%;
+				}
+			
+				#samarpan .pic .arrow
+				{
+					display: block;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -1.375em;
+					width: 2.75em;
+					height: 2.75em;
+					background: #000;
+					background: rgba(0,0,0,0.75);
+					color: #fff;
+					text-align: center;
+					line-height: 2.75em;
+					font-size: 1.5em;
+					z-index: 1;
+					-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-o-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+					transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+				}
+
+					#samarpan .pic .arrow:before
+					{
+						position: relative;
+						padding-right: 0;
+						top: 0.125em;
+					}
+			
+					#samarpan .pic .arrow span
+					{
+						display: block;
+						text-indent: -9999px;
+					}
+				
+					#samarpan .pic:hover .arrow
+					{
+						width: 3em;
+						padding-right: 0.25em;
+					}
+			
+			#ananya header
+			{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin-left: 2.5em;
+			}
+			#vividha header
+			{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin-left: 2.5em;
+			}
+			#tarannum header
+			{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin-left: 2.5em;
+			}
+			#srijan header
+			{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin-left: 2.5em;
+			}
+			#natraj header
+			{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin-left: 2.5em;
+			}
+			#jhalak header
+			{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin-left: 2.5em;
+			}
+			#manan header
+			{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin-left: 2.5em;
+			}
+			#mechnext header
+			{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin-left: 2.5em;
+			}
+			#microbird header
+			{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin-left: 2.5em;
+			}
+			#samarpan header
+			{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin-left: 2.5em;
+			}
+			
+			#ananya h1
+			{
+				position: absolute;
+				left: 0;
+				bottom: 52.5%;
+				margin: 0;
+			}
+			#vividha h1
+			{
+				position: absolute;
+				left: 0;
+				bottom: 52.5%;
+				margin: 0;
+			}
+			#tarannum h1
+			{
+				position: absolute;
+				left: 0;
+				bottom: 52.5%;
+				margin: 0;
+			}
+			#srijan h1
+			{
+				position: absolute;
+				left: 0;
+				bottom: 52.5%;
+				margin: 0;
+			}
+			#natraj h1
+			{
+				position: absolute;
+				left: 0;
+				bottom: 52.5%;
+				margin: 0;
+			}
+			#jhalak h1
+			{
+				position: absolute;
+				left: 0;
+				bottom: 52.5%;
+				margin: 0;
+			}
+			#manan h1
+			{
+				position: absolute;
+				left: 0;
+				bottom: 52.5%;
+				margin: 0;
+			}
+			#microbird h1
+			{
+				position: absolute;
+				left: 0;
+				bottom: 52.5%;
+				margin: 0;
+			}
+			#mechnext h1
+			{
+				position: absolute;
+				left: 0;
+				bottom: 52.5%;
+				margin: 0;
+			}
+			#samarpan h1
+			{
+				position: absolute;
+				left: 0;
+				bottom: 52.5%;
+				margin: 0;
+			}
+			
+			#ananya .byline
+			{
+				position: absolute;
+				left: 0;
+				top: 52.5%;
+				font-size: 1.5em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#vividha .byline
+			{
+				position: absolute;
+				left: 0;
+				top: 52.5%;
+				font-size: 1.5em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#tarannum .byline
+			{
+				position: absolute;
+				left: 0;
+				top: 52.5%;
+				font-size: 1.5em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#srijan .byline
+			{
+				position: absolute;
+				left: 0;
+				top: 52.5%;
+				font-size: 1.5em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#natraj .byline
+			{
+				position: absolute;
+				left: 0;
+				top: 52.5%;
+				font-size: 1.5em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#jhalak .byline
+			{
+				position: absolute;
+				left: 0;
+				top: 52.5%;
+				font-size: 1.5em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#manan .byline
+			{
+				position: absolute;
+				left: 0;
+				top: 52.5%;
+				font-size: 1.5em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#microbird .byline
+			{
+				position: absolute;
+				left: 0;
+				top: 52.5%;
+				font-size: 1.5em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#mechnext .byline
+			{
+				position: absolute;
+				left: 0;
+				top: 52.5%;
+				font-size: 1.5em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#samarpan .byline
+			{
+				position: absolute;
+				left: 0;
+				top: 52.5%;
+				font-size: 1.5em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+
+			#ananya .byline2
+			{
+				position: absolute;
+				left: 0;
+				top: 72.5%;
+				font-size: 1.2em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#vividha .byline2
+			{
+				position: absolute;
+				left: 0;
+				top: 72.5%;
+				font-size: 1.2em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#tarannum .byline2
+			{
+				position: absolute;
+				left: 0;
+				top: 72.5%;
+				font-size: 1.2em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#srijan .byline2
+			{
+				position: absolute;
+				left: 0;
+				top: 72.5%;
+				font-size: 1.2em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#natraj .byline2
+			{
+				position: absolute;
+				left: 0;
+				top: 72.5%;
+				font-size: 1.2em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#jhalak .byline2
+			{
+				position: absolute;
+				left: 0;
+				top: 72.5%;
+				font-size: 1.2em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#manan .byline2
+			{
+				position: absolute;
+				left: 0;
+				top: 72.5%;
+				font-size: 1.2em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#microbird .byline2
+			{
+				position: absolute;
+				left: 0;
+				top: 72.5%;
+				font-size: 1.2em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#mechnext .byline2
+			{
+				position: absolute;
+				left: 0;
+				top: 72.5%;
+				font-size: 1.2em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+			#samarpan .byline2
+			{
+				position: absolute;
+				left: 0;
+				top: 72.5%;
+				font-size: 1.2em;
+				letter-spacing: -0.015em;
+				margin-top: 0;
+			}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		text-align: center;
+		padding: 2em 0 0 0;
+		font-size: 0.75em;
+	}

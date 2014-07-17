@@ -1,0 +1,27 @@
+
+
+
+	body
+	{
+		background: #e0a391;
+	}
+
+		body:before,
+		body:after
+		{
+			display: none;
+		}
+
+	
+	#nav
+	{
+	}
+	
+		#nav a
+		{
+		}
+		
+			#nav a span
+			{
+				display: none;
+			}

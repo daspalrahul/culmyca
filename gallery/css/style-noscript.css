@@ -1,0 +1,43 @@
+
+
+
+	body
+	{
+		height: auto;
+	}
+
+	ul.contact
+	{
+	}
+	
+		ul.contact li
+		{
+			margin: 0 1em 0 0;
+		}
+
+
+	#main
+	{
+		position: relative;
+	}
+
+
+	#reel 
+	{
+		overflow: hidden;
+	}
+
+
+	#footer
+	{
+		position: relative;
+		overflow: visible;
+	}
+		
+		#footer .left,
+		#footer .right
+		{
+			position: relative;
+			padding: 2em;
+			text-align: left;
+		}

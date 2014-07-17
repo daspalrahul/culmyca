@@ -1,0 +1,12 @@
+@font-face {
+   font-family: my_font; 
+   src: url('slow.otf');
+} 
+@font-face {
+   font-family: mt_font; 
+   src: url('light.otf');
+}
+@font-face {
+   font-family: mc_font; 
+   src: url('daniel.ttf');
+}

@@ -1,0 +1,504 @@
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body, input, textarea
+	{
+		font-size: 11pt;
+		line-height: 1.75em;
+	}
+	
+	h1, h2
+	{
+		font-size: 1.75em;
+		letter-spacing: -0.025em;
+	}
+
+	h3, h4, h5, h6
+	{
+		font-size: 1.25em;
+		letter-spacing: -0.025em;
+	}
+
+	header
+	{
+		margin: 0 0 1.5em 0;
+	}
+
+	table.style1
+	{
+		overflow-x: scroll;
+	}
+
+	ul.links
+	{
+	}
+	
+		ul.links li
+		{
+		}
+
+			ul.links li:before
+			{
+				padding: 0 0.25em 0 0.25em;
+			}
+	
+	.button
+	{
+		display: block;
+		width: 100%;
+		padding: 0.75em 0 0.75em 0;
+		text-align: center;
+		margin: 1em 0 0 0;
+	}
+	
+	.byline
+	{
+		margin: 0.5em 0 0 0;
+	}
+	.byline2
+	{
+		margin: 0.5em 0 0 0;
+	}
+
+	.is-gallery
+	{
+	}
+	
+		.is-gallery .image
+		{
+			margin: 5px 0 0 0;
+		}
+
+/*********************************************************************************/
+/* Wrapper                                                                       */
+/*********************************************************************************/
+			
+	#wrapper
+	{
+		padding: 7px;
+	}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+	
+	#nav
+	{
+		text-align: center;
+		margin: 6px 0 8px 0;
+	}
+	
+		#nav a
+		{
+			font-size: 2em;
+			opacity: 0.5;
+			outline: 0;
+			width: 1.5em;
+			height: 1.5em;
+			line-height: 1.35em;
+			margin: 0 0.25em 0 0.25em;
+		}
+		
+			#nav a:active
+			{
+				opacity: 1.0;
+			}
+
+			#nav a span
+			{
+				display: none;
+			}
+	
+/*********************************************************************************/
+/* Panels                                                                        */
+/*********************************************************************************/
+
+	#main
+	{
+		background: none;
+	}
+
+	.panel
+	{
+		padding: 15px 15px 15px 15px;
+		margin: 0 0 7px 0;
+		background: #fff;
+		box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.25);
+	}
+
+		.panel header
+		{
+			padding-top: 1em;
+		}
+	
+	/* ananya */
+	
+		#ananya
+		{
+		}
+		
+			#ananya .pic
+			{
+				width: 100%;
+			}
+			
+				#ananya .pic img
+				{
+					display: block;
+					width: 100%;
+				}
+			
+				#ananya .pic .arrow
+				{
+					display: none;
+				}
+			
+			#ananya header
+			{
+				text-align: center;
+			}
+			
+			#ananya h1
+			{
+				font-size: 2.15em;
+				letter-spacing: -0.025em;
+			}
+			
+			#ananya .byline
+			{
+				font-size: 1.25em;
+			}
+
+		#jhalak
+		{
+		}
+		
+			#jhalak .pic
+			{
+				width: 100%;
+			}
+			
+				#jhalak .pic img
+				{
+					display: block;
+					width: 100%;
+				}
+			
+				#jhalak .pic .arrow
+				{
+					display: none;
+				}
+			
+			#jhalak header
+			{
+				text-align: center;
+			}
+			
+			#jhalak h1
+			{
+				font-size: 2.15em;
+				letter-spacing: -0.025em;
+			}
+			
+			#jhalak .byline
+			{
+				font-size: 1.25em;
+			}
+
+		#natraj
+		{
+		}
+		
+			#natraj .pic
+			{
+				width: 100%;
+			}
+			
+				#natraj .pic img
+				{
+					display: block;
+					width: 100%;
+				}
+			
+				#natraj .pic .arrow
+				{
+					display: none;
+				}
+			
+			#natraj header
+			{
+				text-align: center;
+			}
+			
+			#natraj h1
+			{
+				font-size: 2.15em;
+				letter-spacing: -0.025em;
+			}
+			
+			#natraj .byline
+			{
+				font-size: 1.25em;
+			}
+
+		#srijan
+		{
+		}
+		
+			#srijan .pic
+			{
+				width: 100%;
+			}
+			
+				#srijan .pic img
+				{
+					display: block;
+					width: 100%;
+				}
+			
+				#srijan .pic .arrow
+				{
+					display: none;
+				}
+			
+			#srijan header
+			{
+				text-align: center;
+			}
+			
+			#srijan h1
+			{
+				font-size: 2.15em;
+				letter-spacing: -0.025em;
+			}
+			
+			#srijan .byline
+			{
+				font-size: 1.25em;
+			}
+
+		#tarannum
+		{
+		}
+		
+			#tarannum .pic
+			{
+				width: 100%;
+			}
+			
+				#tarannum .pic img
+				{
+					display: block;
+					width: 100%;
+				}
+			
+				#tarannum .pic .arrow
+				{
+					display: none;
+				}
+			
+			#tarannum header
+			{
+				text-align: center;
+			}
+			
+			#tarannum h1
+			{
+				font-size: 2.15em;
+				letter-spacing: -0.025em;
+			}
+			
+			#tarannum .byline
+			{
+				font-size: 1.25em;
+			}
+
+		#vividha
+		{
+		}
+		
+			#vividha .pic
+			{
+				width: 100%;
+			}
+			
+				#vividha .pic img
+				{
+					display: block;
+					width: 100%;
+				}
+			
+				#vividha .pic .arrow
+				{
+					display: none;
+				}
+			
+			#vividha header
+			{
+				text-align: center;
+			}
+			
+			#vividha h1
+			{
+				font-size: 2.15em;
+				letter-spacing: -0.025em;
+			}
+			
+			#vividha .byline
+			{
+				font-size: 1.25em;
+			}
+
+		#manan
+		{
+		}
+		
+			#manan .pic
+			{
+				width: 100%;
+			}
+			
+				#manan .pic img
+				{
+					display: block;
+					width: 100%;
+				}
+			
+				#manan .pic .arrow
+				{
+					display: none;
+				}
+			
+			#manan header
+			{
+				text-align: center;
+			}
+			
+			#manan h1
+			{
+				font-size: 2.15em;
+				letter-spacing: -0.025em;
+			}
+			
+			#manan .byline
+			{
+				font-size: 1.25em;
+			}
+		#mechnext
+		{
+		}
+		
+			#mechnext .pic
+			{
+				width: 100%;
+			}
+			
+				#mechnext .pic img
+				{
+					display: block;
+					width: 100%;
+				}
+			
+				#mechnext .pic .arrow
+				{
+					display: none;
+				}
+			
+			#mechnext header
+			{
+				text-align: center;
+			}
+			
+			#mechnext h1
+			{
+				font-size: 2.15em;
+				letter-spacing: -0.025em;
+			}
+			
+			#mechnext .byline
+			{
+				font-size: 1.25em;
+			}
+		#microbird
+		{
+		}
+		
+			#microbird .pic
+			{
+				width: 100%;
+			}
+			
+				#microbird .pic img
+				{
+					display: block;
+					width: 100%;
+				}
+			
+				#microbird .pic .arrow
+				{
+					display: none;
+				}
+			
+			#microbird header
+			{
+				text-align: center;
+			}
+			
+			#microbird h1
+			{
+				font-size: 2.15em;
+				letter-spacing: -0.025em;
+			}
+			
+			#microbird .byline
+			{
+				font-size: 1.25em;
+			}
+		#samarpan
+		{
+		}
+		
+			#samarpan .pic
+			{
+				width: 100%;
+			}
+			
+				#samarpan .pic img
+				{
+					display: block;
+					width: 100%;
+				}
+			
+				#samarpan .pic .arrow
+				{
+					display: none;
+				}
+			
+			#samarpan header
+			{
+				text-align: center;
+			}
+			
+			#samarpan h1
+			{
+				font-size: 2.15em;
+				letter-spacing: -0.025em;
+			}
+			
+			#samarpan .byline
+			{
+				font-size: 1.25em;
+			}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		text-align: center;
+		padding: 2em 0 0 0;
+		font-size: 0.85em;
+	}
